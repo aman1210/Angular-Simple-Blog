@@ -16,7 +16,7 @@ export class NavbarComponent implements OnInit {
       document.documentElement.scrollTop ||
       document.body.scrollTop ||
       0;
-    if (number > 60) {
+    if (number > 20) {
       var n = document.querySelector('.navbar');
       n.classList.add('down');
       var nb = document.querySelector('.navbar-brand');

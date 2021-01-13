@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Blog } from '../shared/blog.model';
 import { StorageService } from '../shared/storage.service';
@@ -12,7 +13,7 @@ import { StorageService } from '../shared/storage.service';
 export class MainFormComponent implements OnInit {
   blogForm: FormGroup;
 
-  constructor(private storageService: StorageService) {}
+  constructor(private storageService: StorageService, private router: Router) {}
   ngOnInit() {
     this.blogForm = new FormGroup({
       bTitle: new FormControl(null, [Validators.required], this.rejectedName),
@@ -30,7 +31,7 @@ export class MainFormComponent implements OnInit {
       btitle: this.blogForm.value['bTitle'],
     };
     this.storageService.addBlog(newBlog);
-    // this.blogForm.reset();
+    this.router.navigate(['']);
   }
 
   rejectedName(control: FormControl): Promise<any> | Observable<any> {

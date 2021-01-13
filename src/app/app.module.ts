@@ -10,6 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MainFormComponent } from './main-form/main-form.component';
 import { StorageService } from './shared/storage.service';
 import { HomePageComponent } from './home-page/home-page.component';
+import { FamousGridComponent } from './home-page/famous-grid/famous-grid.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { HomePageComponent } from './home-page/home-page.component';
     NavbarComponent,
     MainFormComponent,
     HomePageComponent,
+    FamousGridComponent,
   ],
   imports: [
     BrowserModule,

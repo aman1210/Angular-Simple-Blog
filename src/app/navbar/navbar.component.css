@@ -3,6 +3,7 @@ nav.navbar {
   position: sticky;
   top: 0;
   margin-bottom: 20px;
+  /* background-color: rgba(212, 209, 218  ); */
   transition: all 300ms;
 }
 
