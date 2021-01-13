@@ -1,0 +1,27 @@
+
+
+.container{  
+    /* background-color: teal; */
+    /* max-width: 80%; */
+    max-width: 80%;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    padding-bottom: 16px;
+}
+
+#heading{
+     text-align: center;
+}
+
+form#main-form{
+    margin-top: 20px;
+}
+
+.box{
+    border-radius: 50%;
+    text-align: center;
+    margin: auto auto;
+    background-color: red;
+    height: 300px;
+    width: 300px;
+}

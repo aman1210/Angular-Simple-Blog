@@ -1,0 +1,74 @@
+<!-- <div class="formBackground"></div> -->
+<div class="container">
+  <div class="row">
+    <div class="col-10 col-md-8 offset-1 offset-md-2" id="heading">
+      <h1>New Blog</h1>
+    </div>
+    <div class="col-10 col-md-8 offset-1 offset-md-2">
+      <form [formGroup]="blogForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="title"> Blog Title </label>
+          <input
+            type="text"
+            class="form-control"
+            id="title"
+            aria-describedby="title"
+            formControlName="bTitle"
+          />
+          <small
+            id="titleHelp"
+            class="form-text text-muted"
+            *ngIf="
+              !blogForm.get('bTitle').valid && blogForm.get('bTitle').touched
+            "
+          >
+            <span *ngIf="blogForm.get('bTitle').errors['Invalid Blog Name']"
+              >'test' cannot be Blog Name</span
+            >
+            <span *ngIf="blogForm.get('bTitle').errors['required']"
+              >Field is required</span
+            >
+          </small>
+        </div>
+        <div class="form-group">
+          <label for="imgURL"> Image URL </label>
+          <input
+            type="url"
+            class="form-control"
+            id="imgURL"
+            aria-describedby="imgURL"
+            formControlName="bImage"
+          />
+          <small
+            id="imgHelp"
+            class="form-text text-muted"
+            *ngIf="
+              !blogForm.get('bImage').valid && blogForm.get('bImage').touched
+            "
+          >
+            Field is required.
+          </small>
+        </div>
+        <div class="form-group">
+          <label for="blog"> Blog </label>
+          <textarea
+            class="form-control"
+            rows="10"
+            id="blog"
+            maxlength="10000"
+            formControlName="b"
+          ></textarea>
+          <small
+            id="blogHelp"
+            class="form-text text-muted"
+            *ngIf="!blogForm.get('b').valid && blogForm.get('b').touched"
+            >Blog cannot be empty.</small
+          >
+        </div>
+        <button class="btn btn-success" [disabled]="!blogForm.valid">
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
