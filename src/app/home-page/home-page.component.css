@@ -5,6 +5,10 @@
   justify-content: center;
 }
 
+.row {
+  margin-bottom: 50px;
+}
+
 .editIcon {
   position: fixed;
   bottom: 0;

@@ -11,6 +11,7 @@ import { MainFormComponent } from './main-form/main-form.component';
 import { StorageService } from './shared/storage.service';
 import { HomePageComponent } from './home-page/home-page.component';
 import { FamousGridComponent } from './home-page/famous-grid/famous-grid.component';
+import { RecentComponent } from './home-page/recent/recent.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { FamousGridComponent } from './home-page/famous-grid/famous-grid.compone
     MainFormComponent,
     HomePageComponent,
     FamousGridComponent,
+    RecentComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,43 +1,58 @@
 <div class="row">
-  <div class="col-10 col-lg-6 offset-1 offset-lg-0 big-grid">
-    <img src="{{ blogs[0].bimage }}" />
-    <h3>
-      {{ blogs[0].btitle }}
-    </h3>
-    <div class="spacer"></div>
-    <p>{{ blogs[0].blog.slice(0, 200) }}...</p>
+  <div class="col-10 col-lg-4 offset-1 offset-lg-0">
+    <div class="heading">
+      <h2>Trending Blogs</h2>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-10 col-lg-6 offset-1 offset-lg-0">
+    <div class="big-grid">
+      <img src="{{ blogs[0].bimage }}" />
+      <h3>
+        {{ blogs[0].btitle }}
+      </h3>
+      <div class="spacer"></div>
+      <p>{{ blogs[0].blog.slice(0, 300) }}...</p>
+    </div>
   </div>
   <div class="col-10 col-lg-6 offset-1 offset-lg-0">
     <div class="row">
-      <div class="col-lg-5 grid">
-        <img src="{{ blogs[0].bimage }}" />
-        <h4>
-          {{ blogs[0].btitle }}
-        </h4>
-        <p>{{ blogs[0].blog.slice(0, 100) }}...</p>
+      <div class="col-md-6 grid">
+        <div class="small-grid">
+          <img src="{{ blogs[0].bimage }}" />
+          <h4>
+            {{ blogs[0].btitle }}
+          </h4>
+          <p>{{ blogs[0].blog.slice(0, 100) }}...</p>
+        </div>
       </div>
-      <div class="col-lg-5 grid">
-        <img src="{{ blogs[0].bimage }}" />
-        <h4>
-          {{ blogs[0].btitle }}
-        </h4>
-        <p>{{ blogs[0].blog.slice(0, 100) }}...</p>
+      <div class="col-md-6 grid">
+        <div class="small-grid">
+          <img src="{{ blogs[0].bimage }}" />
+          <h4>
+            {{ blogs[0].btitle }}
+          </h4>
+          <p>{{ blogs[0].blog.slice(0, 100) }}...</p>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-5 grid">
-        <img src="{{ blogs[0].bimage }}" />
-        <h4>
-          {{ blogs[0].btitle }}
-        </h4>
-        <p>{{ blogs[0].blog.slice(0, 100) }}...</p>
+      <div class="col-md-6 grid">
+        <div class="small-grid">
+          <img src="{{ blogs[0].bimage }}" />
+          <h4>
+            {{ blogs[0].btitle }}
+          </h4>
+          <p>{{ blogs[0].blog.slice(0, 100) }}...</p>
+        </div>
       </div>
-      <div class="col-lg-5 grid">
-        <img src="{{ blogs[0].bimage }}" />
-        <h4>
-          {{ blogs[0].btitle }}
-        </h4>
-        <p>{{ blogs[0].blog.slice(0, 100) }}...</p>
+      <div class="col-md-6 grid">
+        <div class="small-grid">
+          <img src="{{ blogs[0].bimage }}" />
+          <h4>
+            {{ blogs[0].btitle }}
+          </h4>
+          <p>{{ blogs[0].blog.slice(0, 100) }}...</p>
+        </div>
       </div>
     </div>
   </div>

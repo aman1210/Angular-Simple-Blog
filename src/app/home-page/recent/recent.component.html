@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-10 col-lg-4 offset-1 offset-lg-0">
+    <div class="heading">
+      <h2>Recently Added</h2>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-10 col-md-6 offset-1 offset-md-0" *ngFor="let blog of blogs">
+    <div class="row grid">
+      <div class="col-md-5">
+        <img src="{{ blog.bimage }}" alt="{{ blog.btitle }}" />
+      </div>
+      <div class="col-md-7">
+        <p>{{ blog.blog.slice(0, 150) }}...</p>
+      </div>
+    </div>
+  </div>
+</div>
