@@ -29,6 +29,8 @@ export class MainFormComponent implements OnInit {
       bimage: this.blogForm.value['bImage'],
       blog: this.blogForm.value['b'],
       btitle: this.blogForm.value['bTitle'],
+      likes: 0,
+      comments: [],
     };
     this.storageService.addBlog(newBlog);
     this.router.navigate(['']);

@@ -12,6 +12,8 @@ import { StorageService } from './shared/storage.service';
 import { HomePageComponent } from './home-page/home-page.component';
 import { FamousGridComponent } from './home-page/famous-grid/famous-grid.component';
 import { RecentComponent } from './home-page/recent/recent.component';
+import { BlogDetailComponent } from './blog-detail/blog-detail.component';
+import { BlogService } from './shared/blog.service';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,7 @@ import { RecentComponent } from './home-page/recent/recent.component';
     HomePageComponent,
     FamousGridComponent,
     RecentComponent,
+    BlogDetailComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,7 @@ import { RecentComponent } from './home-page/recent/recent.component';
     ReactiveFormsModule,
     AppRoute,
   ],
-  providers: [StorageService],
+  providers: [StorageService, BlogService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
